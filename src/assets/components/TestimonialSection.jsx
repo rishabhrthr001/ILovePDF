@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const testimonials = [
   {
@@ -155,7 +155,7 @@ const TestimonialSection = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-4">Testimonials</h2>
+      <h2 className="text-3xl font-semibold text-red-500 text-center mb-4">Testimonials</h2>
       <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg bg-white p-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {showAll
@@ -170,7 +170,7 @@ const TestimonialSection = () => {
                     />
                     <div>
                       <p className="text-gray-900 font-semibold">{testimonial.author}</p>
-                      <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                      <p className="text-gray-600 text-sm font-extralight">{testimonial.role}</p>
                       <StarRating rating={testimonial.rating} />
                     </div>
                   </div>
@@ -197,7 +197,7 @@ const TestimonialSection = () => {
         {!showAll && (
           <div className="flex justify-center mt-4">
             <button
-              className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none"
+              className="px-4 py-2 bg-red-500 text-white font-extralight rounded-lg hover:bg-red-700 focus:outline-none"
               onClick={toggleShowAll}
             >
               Show All Testimonials
@@ -207,7 +207,7 @@ const TestimonialSection = () => {
         {showAll && (
           <div className="flex justify-center mt-4">
             <button
-              className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 focus:outline-none"
+              className="px-4 py-2 bg-red-500 text-white rounded-lg font-extralight hover:bg-red-700 focus:outline-none"
               onClick={closeAll}
             >
               Close

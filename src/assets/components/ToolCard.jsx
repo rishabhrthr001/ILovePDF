@@ -1,7 +1,5 @@
-
-import React from 'react';
-
 const ToolCard = ({ title, description, icon, badge, link }) => {
+
   return (
     <a href={link} className="flex flex-col p-6 border border-gray-300 rounded-lg shadow-sm bg-white w-full h-full hover:shadow-md transition-shadow duration-300 transform transition-transform duration-300 hover:scale-105">
       <div className="flex items-start mb-4">

@@ -8,12 +8,12 @@ const HeroAction = ({text}) => {
       
   return (
     <div className='flex flex-col justify-center items-center text-center mt-8'>
-        <h1 className='lg:text-5xl md:text-3xl font-bold'>Every tool you need to work with PDFs in one place</h1>
-        <h2 className='lg:text-2xl md:text-xl'>Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge,</h2>
-        <h2 className='lg:text-2xl md:text-xl'>split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</h2>
+        <h1 className='lg:text-5xl md:text-3xl mb-2 font-bold'>Every tool you need to work with PDFs in one place</h1>
+        <h2 className='lg:text-2xl md:text-xl  font-extralight'>Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge,</h2>
+        <h2 className='lg:text-2xl md:text-xl font-extralight'>split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</h2>
     <div className="flex justify-center">
       <button
-        className="hidden md:block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none"
+        className="hidden md:block mb-5 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none"
         onClick={handleButtonClick}
         style={{ marginTop: '20px' }}
       >
